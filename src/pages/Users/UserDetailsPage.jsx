@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { useFetch } from "../../hooks/userHooks/useFetchUsersdata";
+import { useFetch } from "../../hooks/userHooks/useFetchdata";
 import { useParams } from "react-router-dom";
 import UserDetailCard from "../../components/UserDetailCard";
 function UserDetailsPage() {
   const { id } = useParams();
-  console.log(id);
+
   const {
     data: userDetails,
     isPending,

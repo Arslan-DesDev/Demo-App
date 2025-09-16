@@ -24,7 +24,6 @@ export const useFetch = ({
   cacheTime = 5 * 60 * 1000,
   staleTime = 0,
   refetchOnWindowFocus = false,
-  
 }) => {
   const isGet = method.toUpperCase() === "GET";
 
@@ -36,7 +35,6 @@ export const useFetch = ({
       cacheTime,
       refetchOnWindowFocus,
       staleTime,
-      
     });
   } else {
     return useMutation({

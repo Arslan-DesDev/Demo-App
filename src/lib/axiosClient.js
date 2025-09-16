@@ -15,7 +15,6 @@ axiosClient.interceptors.response.use(
 
     if (response) {
       if (response.status >= 500) {
-        // todo: need to add toast notification here
         console.error("Server error");
       }
     }

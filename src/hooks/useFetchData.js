@@ -1,5 +1,5 @@
 import { useQuery, useMutation } from "@tanstack/react-query";
-import axiosClient from "../../lib/axiosClient";
+import axiosClient from ".././lib/axiosClient";
 
 const fetcher = async ({ url, method = "GET", data, params, headers }) => {
   try {
@@ -24,6 +24,7 @@ export const useFetch = ({
   cacheTime = 5 * 60 * 1000,
   staleTime = 0,
   refetchOnWindowFocus = false,
+  
 }) => {
   const isGet = method.toUpperCase() === "GET";
 
@@ -35,6 +36,7 @@ export const useFetch = ({
       cacheTime,
       refetchOnWindowFocus,
       staleTime,
+      
     });
   } else {
     return useMutation({

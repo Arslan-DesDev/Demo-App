@@ -34,6 +34,17 @@ A React-based web application to manage users and posts. This project demonstrat
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/Arslan-DesDev/Demo-App.git
+cd Demo-App
 ```
+## Run the project
+```bash
+npm install 
+or
+yarn start
+```
+```bash
+npm run dev
+```
+
+

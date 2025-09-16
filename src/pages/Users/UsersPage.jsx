@@ -16,8 +16,8 @@ function Users() {
   if (isError) return <p>Error: {error.message}</p>;
   return (
     <>
-      <h1>Users Page</h1>
-
+      <h1 className="text-xl text-gray-800 font-bold mb-4">All Users</h1>
+      <hr class="border-gray-300 my-4"/>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-3 ">
         {userData.map((user) => (
           <UserCard key={user.id} user={user} />

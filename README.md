@@ -28,7 +28,17 @@ A React-based web application to manage users and posts. This project demonstrat
 - Axios for API requests
 
 ---
-
+## Folder Structure
+```bash
+src/
+│
+├─ components/       # Reusable components like PostCard, UserDetailCard, Navbar
+├─ hooks/            # Custom hooks for fetching data (useFetch)
+├─ layout/           # Layout components
+├─ pages/            # Pages like UsersPage, UserDetailsPage, PostsPage
+├─ lib/              # Axios client setup
+└─ App.jsx           # Application entry point with routing
+```
 ## Project Setup
 
 ### 1. Clone the repository
